@@ -10,6 +10,8 @@ namespace RentalManagementServices.Core
 
         public string Dimension { get; set; }   
 
+        public bool IsVacant { get; set; }  
+
         public Tenant Tenant { get; set; }  
         public long TenantId { get; set; }
 

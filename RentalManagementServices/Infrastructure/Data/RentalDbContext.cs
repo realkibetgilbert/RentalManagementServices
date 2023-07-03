@@ -6,7 +6,7 @@ namespace RentalManagementServices.Infrastructure.Data
 {
     public class RentalDbContext : DbContext
     {
-        public RentalDbContext(DbContextOptions options) : base(options)
+        public RentalDbContext(DbContextOptions<RentalDbContext> options) : base(options)
         {
         }
         public DbSet<Tenant> Tenants { get; set; }
@@ -48,7 +48,6 @@ namespace RentalManagementServices.Infrastructure.Data
                 entity.HasOne(e=>e.Room).WithMany(e=>e.WorkerRooms).HasForeignKey(e=>e.RoomId).OnDelete(DeleteBehavior.NoAction);
                 entity.HasOne(e=>e.Worker).WithMany(e=>e.WorkerRooms).HasForeignKey(e=>e.WorkerId).OnDelete(DeleteBehavior.NoAction);
             });
-
 
             modelBuilder.Entity<Transaction>(entity =>
             {

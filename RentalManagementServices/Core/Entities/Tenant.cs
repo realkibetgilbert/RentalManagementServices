@@ -11,7 +11,8 @@
         public DateTime DateofJoin { get; set; }
 
         public DateTime? DateofVacating { get; set; }
-
+         
+        public bool IsActive { get; set; }
         public Room Room { get; set; }
         public long RoomId { get; set; }
 

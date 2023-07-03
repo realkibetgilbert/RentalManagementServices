@@ -24,6 +24,11 @@
   <ItemGroup>
     <Folder Include="Core\Interfaces\" />
     <Folder Include="Core\Utils\" />
+    <Folder Include="Dtos\Pricing\" />
+    <Folder Include="Dtos\Transaction\" />
+    <Folder Include="Dtos\Worker\" />
+    <Folder Include="Dtos\Room\" />
+    <Folder Include="Dtos\Tenant\" />
     <Folder Include="Infrastructure\SqlServerImplementations\" />
   </ItemGroup>
 
