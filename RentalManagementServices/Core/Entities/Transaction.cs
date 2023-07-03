@@ -8,7 +8,7 @@
         public string Reference { get; set; }    
         public string MpesaReference { get; set; }    
         public string BankReference { get; set; }    
-        public string Naration { get; set; }    
+        public string Narration { get; set; }    
         public string status { get; set; }    
         public long TenantId { get; set; }    
         public string PhoneNumber { get; set;}

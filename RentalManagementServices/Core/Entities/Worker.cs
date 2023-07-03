@@ -1,4 +1,6 @@
-﻿namespace RentalManagementServices.Core
+﻿using RentalManagementServices.Core.Entities;
+
+namespace RentalManagementServices.Core
 {
     public class Worker
     {
@@ -12,8 +14,9 @@
         public DateTime DateofJoin { get; set; }
 
         public DateTime? DateofEnd { get; set; }
-
-        public List<Room> Rooms { get; set; }
+       
+        public ICollection<WorkerRoom> WorkerRooms { get; set; }
+         
    
     }
 }

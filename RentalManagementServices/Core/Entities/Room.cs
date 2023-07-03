@@ -1,4 +1,6 @@
-﻿namespace RentalManagementServices.Core
+﻿using RentalManagementServices.Core.Entities;
+
+namespace RentalManagementServices.Core
 {
     public class Room
     {
@@ -8,14 +10,9 @@
 
         public string Dimension { get; set; }   
 
+        public Tenant Tenant { get; set; }  
         public long TenantId { get; set; }
 
-        public Tenant Tenant { get; set; }  
-
-        public long PricingId { get; set; }
-
-        public Pricing Pricing { get; set; }
-
-        public List<Worker> Workers { get; set; }
+        public ICollection<WorkerRoom> WorkerRooms { get; set; }
     }
 }

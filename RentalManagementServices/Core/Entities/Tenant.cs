@@ -10,10 +10,10 @@
 
         public DateTime DateofJoin { get; set; }
 
-        public DateTime? DateofLeaving { get; set; }
-
-        public long RoomId { get; set; }
+        public DateTime? DateofVacating { get; set; }
 
         public Room Room { get; set; }
+        public long RoomId { get; set; }
+
     }
 }
